@@ -64,3 +64,30 @@ Environment Variable Changes:
 If the changes to the environment variables do not take effect, try restarting your computer.
 
 By following these steps, you should be able to successfully run the keytool command and add the fingerprint to the Firebase console.
+
+## If any issue with - keytool : [The term 'keytool' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again]
+
+Open the Terminal in Android Studio:
+
+Open Android Studio.
+Navigate to View > Tool Windows > Terminal to open the terminal.
+Set the PATH Variable for PowerShell:
+Use the following command to set the PATH variable temporarily in the current session:
+
+sh
+Copy code
+$env:Path = "C:\Program Files\Java\jdk-22\bin;" + $env:Path
+Verify the PATH:
+Check if the PATH is set correctly:
+
+sh
+Copy code
+echo $env:Path
+Run the keytool Command:
+Now, you should be able to run the keytool command:
+
+sh
+Copy code
+keytool -list -v -alias androiddebugkey -keystore $env:USERPROFILE\.android\debug.keystore
+
+
