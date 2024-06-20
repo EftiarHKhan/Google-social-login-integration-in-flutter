@@ -76,18 +76,23 @@ Use the following command to set the PATH variable temporarily in the current se
 
 sh
 Copy code
-$env:Path = "C:\Program Files\Java\jdk-22\bin;" + $env:Path
+
+### $env:Path = "C:\Program Files\Java\jdk-22\bin;" + $env:Path
+
 Verify the PATH:
 Check if the PATH is set correctly:
 
 sh
 Copy code
-echo $env:Path
+
+### echo $env:Path
+
 Run the keytool Command:
 Now, you should be able to run the keytool command:
 
 sh
 Copy code
-keytool -list -v -alias androiddebugkey -keystore $env:USERPROFILE\.android\debug.keystore
+
+### keytool -list -v -alias androiddebugkey -keystore $env:USERPROFILE\.android\debug.keystore
 
 
