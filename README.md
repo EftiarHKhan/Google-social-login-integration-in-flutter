@@ -1,5 +1,5 @@
 # Google-social-login-integration-in-flutter
-# SHA fingerprint key generation:
+## SHA fingerprint key generation:
 Step 1: Install the JDK
 Download the JDK:
 
@@ -10,6 +10,7 @@ Install the JDK:
 Run the downloaded installer.
 Follow the on-screen instructions to complete the installation.
 Note the installation directory (e.g., C:\Program Files\Java\jdk-xx.x.x).
+
 Step 2: Add the JDK to the System PATH
 Open Environment Variables:
 
@@ -25,6 +26,7 @@ Add JDK to PATH:
 In the Edit Environment Variable window, click "New".
 Add the path to the bin directory of your JDK installation (e.g., C:\Program Files\Java\jdk-xx.x.x\bin).
 Click "OK" to close all windows.
+
 Step 3: Verify the Installation
 Open Command Prompt:
 
@@ -36,6 +38,7 @@ sh
 Copy code
 keytool -version
 You should see the version of the keytool displayed, indicating it is recognized.
+
 Step 4: Run the keytool Command
 Prepare the Command:
 
