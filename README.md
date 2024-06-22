@@ -88,6 +88,7 @@ Copy code
 ### echo $env:Path
 
 Run the keytool Command:
+
 Now, you should be able to run the keytool command:
 
 sh
